@@ -869,6 +869,53 @@ footer .footer__logo__img {
     z-index: 1000;
 }
 
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(100%);
+  }
+
+  10% {
+    transform: translateX(-75%);
+  }
+
+  20% {
+    transform: translateX(-65%);
+  }
+
+  30% {
+    transform: translateX(-75%);
+  }
+
+  40% {
+    transform: translateX(-65%);
+  }
+
+  50% {
+    transform: translateX(-75%);
+  }
+
+  60% {
+    transform: translateX(-65%);
+  }
+
+  70% {
+    transform: translateX(-75%);
+  }
+
+  80% {
+    transform: translateX(-65%);
+  }
+
+  90% {
+    transform: translateX(-75%);
+  }
+
+
+  100% {
+    transform: translateX(0);
+  }
+}
+
 .notify {
     background-image: url("../assets/notify.svg");
     width: 125px;
@@ -878,5 +925,7 @@ footer .footer__logo__img {
     top: 50%;
     z-index: 100;
     margin-left: 288px;
-    display: none;
+    animation: 5s ease-out 0s 1 slideInFromLeft; 
+    /*display: none;*/
 }
+
